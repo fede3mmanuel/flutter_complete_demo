@@ -44,7 +44,6 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
             Text(
               'You have pushed the button this many times:',
@@ -52,6 +51,12 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
+            ),
+            OutlinedButton(
+              onPressed: () {
+                print('Hello world');
+              },
+              child: Text('Hello world'),
             ),
           ],
         ),
