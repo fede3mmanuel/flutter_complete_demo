@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.flutter_complete_demo">
    <application
-        android:label="flutter_complete_demo"
+        android:label="birdApp"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
