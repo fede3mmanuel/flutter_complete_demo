@@ -103,7 +103,8 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               child: MaterialButton(
                 onPressed: () {
-                  print('Press the button');
+                  print('Username: ' + _usernameController.text);
+                  print('Password: ' + _passwordController.text);
                 },
                 child: Text('Press Me'),
               ),
