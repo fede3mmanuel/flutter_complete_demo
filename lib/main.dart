@@ -49,6 +49,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 bottom: 10
               ),
               child: TextFormField(
+                style: TextStyle(
+                  color: Colors.yellow,
+                ),
               controller: _usernameController,
             ),
             ),
