@@ -42,6 +42,11 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Container(
+              width: 100,
+              height: 100,
+              child: Image.asset('assets/bird.png'),
+            ),
             Text('logo here'),
             Text('Text field Username here'),
             Text('Text field password here'),
