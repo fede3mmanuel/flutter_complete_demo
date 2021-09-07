@@ -94,7 +94,10 @@ class _MyHomePageState extends State<MyHomePage> {
               obscureText: true,
             ),
             ),
-            Text('Text button here'),
+            OutlinedButton(
+              onPressed: () {},
+              child: Text('Outlined button'),
+            ),
           ],
         ),
       ),
