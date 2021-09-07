@@ -29,6 +29,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
 
   TextEditingController _usernameController = TextEditingController();
+  TextEditingController _passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -89,7 +90,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     borderSide: BorderSide(color: Colors.black)
                   ),
                 ),
-              controller: _usernameController,
+              controller: _passwordController,
+              obscureText: true,
             ),
             ),
             Text('Text button here'),
