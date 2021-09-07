@@ -96,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Container(
               width: MediaQuery.of(context).size.width / 1.3,
-              height: MediaQuery.of(context).size.height / 10,
+              height: 50,
               child: MaterialButton(
                 onPressed: () {
                   print('Press the button');
