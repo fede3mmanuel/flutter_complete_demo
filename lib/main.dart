@@ -94,9 +94,13 @@ class _MyHomePageState extends State<MyHomePage> {
               obscureText: true,
             ),
             ),
-            OutlinedButton(
-              onPressed: () {},
-              child: Text('Outlined button'),
+            Container(
+              child: MaterialButton(
+                onPressed: () {
+                  print('Press the button');
+                },
+                child: Text('Press Me'),
+              ),
             ),
           ],
         ),
