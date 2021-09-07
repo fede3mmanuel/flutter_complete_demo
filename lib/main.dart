@@ -43,6 +43,9 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text('logo here'),
+            Text('Text field Username here'),
+            Text('Text field password here'),
+            Text('Text button here'),
           ],
         ),
       ),
