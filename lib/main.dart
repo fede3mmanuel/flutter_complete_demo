@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 cursorColor: Colors.black,
                 decoration: InputDecoration(
                   hintText: 'Input Username',
-                  hintStyle: TextStyle(color: Colors.red),
+                  hintStyle: TextStyle(color: Colors.black),
                   border: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.black)
                   ),
@@ -67,7 +67,31 @@ class _MyHomePageState extends State<MyHomePage> {
               controller: _usernameController,
             ),
             ),
-            Text('Text field password here'),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 50, 
+                right: 50, 
+                bottom: 10
+              ),
+              child: TextFormField(
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 22,
+                ),
+                cursorColor: Colors.black,
+                decoration: InputDecoration(
+                  hintText: 'Input Password',
+                  hintStyle: TextStyle(color: Colors.black),
+                  border: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.black)
+                  ),
+                  focusedBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.black)
+                  ),
+                ),
+              controller: _usernameController,
+            ),
+            ),
             Text('Text button here'),
           ],
         ),
