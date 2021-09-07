@@ -27,13 +27,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
+  TextEditingController _usernameController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -43,12 +38,13 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Container(
-              width: 100,
-              height: 100,
+              width: 250,
+              height: 250,
               child: Image.asset('assets/bird.png'),
             ),
-            Text('logo here'),
-            Text('Text field Username here'),
+            TextFormField(
+              controller: _usernameController,
+            ),
             Text('Text field password here'),
             Text('Text button here'),
           ],
