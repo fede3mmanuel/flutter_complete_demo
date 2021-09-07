@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_complete_demo/home_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -105,6 +106,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   print('Username: ' + _usernameController.text);
                   print('Password: ' + _passwordController.text);
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(builder: (context) => HomePage()),
+                  );
                 },
                 child: Text('Press Me'),
               ),
