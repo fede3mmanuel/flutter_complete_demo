@@ -50,7 +50,17 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               child: TextFormField(
                 style: TextStyle(
-                  color: Colors.yellow,
+                  color: Colors.black,
+                  fontSize: 22,
+                ),
+                cursorColor: Colors.black,
+                decoration: InputDecoration(
+                  border: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.black)
+                  ),
+                  focusedBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.black)
+                  ),
                 ),
               controller: _usernameController,
             ),
