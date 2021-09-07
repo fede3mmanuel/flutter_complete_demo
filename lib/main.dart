@@ -97,6 +97,10 @@ class _MyHomePageState extends State<MyHomePage> {
             Container(
               width: MediaQuery.of(context).size.width / 1.3,
               height: 50,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(35.0),
+                color: Colors.amber,
+              ),
               child: MaterialButton(
                 onPressed: () {
                   print('Press the button');
