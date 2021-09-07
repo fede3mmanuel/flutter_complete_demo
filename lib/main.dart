@@ -42,8 +42,15 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 250,
               child: Image.asset('assets/bird.png'),
             ),
-            TextFormField(
+            Padding(
+              padding: EdgeInsets.only(
+                left: 50, 
+                right: 50, 
+                bottom: 10
+              ),
+              child: TextFormField(
               controller: _usernameController,
+            ),
             ),
             Text('Text field password here'),
             Text('Text button here'),
