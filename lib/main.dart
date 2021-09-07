@@ -55,6 +55,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 cursorColor: Colors.black,
                 decoration: InputDecoration(
+                  hintText: 'Input Username',
+                  hintStyle: TextStyle(color: Colors.red),
                   border: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.black)
                   ),
